@@ -1,6 +1,6 @@
 ### Intro to Regular Expressions in Python
 ### Herman Leung
-### 2/9/2015 
+### 2/9/2015, 3/24/2015
 
 ################
 ### CONTENTS ###
@@ -56,8 +56,7 @@ text3 = '''I thought the other day,
 
 text3
 # Returns: 
-# I thought the other day,
-#             "I'm going to eat six spoons of fresh snow peas." 
+# I thought the other day,\n             "I'm going to eat six spoons of fresh snow peas." 
 
 
 ##### >>>>> 2. REGEX <<<<<
@@ -230,7 +229,7 @@ re.search('b([aeiou])([aeiou])t', 'beat, bait').group(2)
 # Returns: 'a'
 
 ## NOTE: even if () is used for another reason (like the OR function),
-## the group function still operates (exception: (? )) :
+## the group function may still operate (one of the exceptions: (? )) :
 
 re.findall('b(ea|ai)t', 'beat, bait')
 # Returns: ['ea', 'ai']

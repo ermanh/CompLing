@@ -46,7 +46,7 @@ import nltk, re
 ### 0. Downloading NLTK packages ###
 ### ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ###
 
-#nltk.download()  # a window will pop up
+nltk.download()  # a window will pop up
 
 ## for the purposes of this tutorial, download the following only:
 # brown
@@ -90,6 +90,9 @@ brown.fileids(categories="hobbies") # text files in the category of "hobbies"
 brown.raw()[:100] # the raw text of the brown corpus (note tags)
 brown.sents()[0] # first sentence in the corpus
 brown.words()[:10] # first ten words in the corpus
+brown.tagged_sents()[0] # first sentence, each word tagged with part-of-speech info
+brown.tagged_words()[:50] # first fifty words, all tagged
+
 
 ##-- Specialized corpus: cmudict --##
 
